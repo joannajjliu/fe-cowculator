@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/Header.scss';
 
 const Header: React.FC = () => {
   return (
-    <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark mb-5">
+    <nav className="navbar navbar-expand-md navbar-dark fixed-top mb-5 cowculator-header__container">
       <div className="container-fluid">
         <Link className="navbar-brand" aria-current="page" to="/">
-          StockKeeper.ai
+          CowCulator
         </Link>
         <button
           className="navbar-toggler"
@@ -23,14 +24,17 @@ const Header: React.FC = () => {
           <ul className="navbar-nav ms-auto mb-2 mb-md-0">
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to="/hospital">
-                <i className="bi bi-building icon" data-toggle="tooltip" title="inventory" id="inventory"></i>
-                {' Inventory'}
+                <i className="bi bi-bell-fill" data-toggle="tooltip" title="alerts" id="alerts-icon"></i>
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to="/hospital-room">
-                <i className="bi bi-card-text" data-toggle="tooltip" title="room view" id="room-view"></i>
-                {' Room'}
+                <i className="bi bi-share-fill" data-toggle="tooltip" title="share" id="share-icon"></i>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link active" aria-current="page" to="/hospital">
+                <i className="bi bi-search" data-toggle="tooltip" title="search" id="search-icon"></i>
               </Link>
             </li>
           </ul>

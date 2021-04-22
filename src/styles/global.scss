@@ -1,3 +1,9 @@
+$cowculator-primary-green: #5db075;
+$cowculator-secondary-green: #27ae60;
+$cowculator-primary-yellow: #f2c94c;
+$cowculator-primary-font: Roboto, sans-serif;
+$cowculator-secondary-font: Calibri, sans-serif;
+
 $stockkeeper-blue: #3855f5;
 $stockkeeper-grey: #262626;
 $stockkeeper-light-blue: #8c9cf7f3;
@@ -36,7 +42,8 @@ a:active {
 
 .icon {
   color: white;
-  vertical-align: middle;
+  position: relative;
+  bottom: 2px;
 }
 
 .icon--red {

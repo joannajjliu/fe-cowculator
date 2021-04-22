@@ -1,6 +1,11 @@
 @import './global.scss';
 
-.stock-keeper-header {
+.cowculator-header {
+  &__container {
+    color: $cowculator-primary-green;
+    background-color: $cowculator-primary-green;
+  }
+
   &__logo {
     width: 20px;
   }

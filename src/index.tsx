@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard';
 import DefaultHeader from './templates/DefaultHeader';
 import HospitalRoom from './pages/HospitalRoom';
 import Hospital from './pages/Hospital';
+import Login from './pages/Login';
 import PageNotFound from './pages/PageNotFound';
 import Settings from './pages/Settings';
 import StickyFooter from './templates/StickyFooter';
@@ -25,6 +26,9 @@ const App = () => (
               <Switch>
                 <Route exact path={'/'}>
                   <Dashboard />
+                </Route>
+                <Route exact path={'/login'}>
+                  <Login />
                 </Route>
                 <Route exact path={'/hospital'}>
                   <Hospital />
