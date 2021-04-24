@@ -17,38 +17,48 @@ const baseLink = '/fe-stock-keeper-ai';
 
 const App = () => (
   <Router>
-    <body className="d-flex flex-column h-100 stock-keeper-global__body">
-      <DefaultHeader />
+    <div className="d-flex flex-column h-100 stock-keeper-global__body">
       <main className="mb-4">
-        <section className="py-5 mt-5 text-center container">
-          <div className="row py-lg-5">
-            <div className="col-lg-10 col-md-8 mx-auto">
-              <Switch>
-                <Route exact path={'/'}>
-                  <Dashboard />
-                </Route>
-                <Route exact path={'/login'}>
+        <Switch>
+          <Route exact path={'/'}>
+            <section className="py-5 mt-5 text-center container">
+              <div className="row py-lg-5">
+                <div className="col-lg-10 col-md-8 mx-auto">
                   <Login />
-                </Route>
-                <Route exact path={'/hospital'}>
-                  <Hospital />
-                </Route>
-                <Route path={'/hospital-room'}>
-                  <HospitalRoom />
-                </Route>
-                <Route exact path={'/settings'}>
-                  <Settings />
-                </Route>
-                <Route path={'/'}>
-                  <PageNotFound />
-                </Route>
-              </Switch>
-            </div>
+                </div>
+              </div>
+            </section>
+          </Route>
+          <div>
+            <DefaultHeader />
+            <section className="py-5 mt-5 text-center container">
+              <div className="row py-lg-5">
+                <div className="col-lg-10 col-md-8 mx-auto">
+                  <Route exact path={'/dashboard'}>
+                    <Dashboard />
+                  </Route>
+                  <Route exact path={'/hospital'}>
+                    <Hospital />
+                  </Route>
+                  <Route exact path={'/hospital-room'}>
+                    <HospitalRoom />
+                  </Route>
+                  <Route exact path={'/settings'}>
+                    <Settings />
+                  </Route>
+                  {/* TODO: add support for unmatching URL (404 page) 
+                  404 page keeps showing up currently not working */}
+                  {/* <Route path="*" exact={true}>
+                    <PageNotFound />
+                  </Route> */}
+                </div>
+              </div>
+            </section>
+            <StickyFooter />
           </div>
-        </section>
+        </Switch>
       </main>
-      <StickyFooter />
-    </body>
+    </div>
   </Router>
 );
 
