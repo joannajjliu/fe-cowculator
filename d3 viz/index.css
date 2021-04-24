@@ -1,0 +1,24 @@
+h1 {
+    display: grid;
+    justify-content: center;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+}
+
+.calendar {
+    display: flex;
+    justify-content: around;
+}
+
+.day {
+    display: grid;
+    place-items: center;
+}
+
+.circle {
+    background: blueviolet;
+    border-radius: 50%;
+}
