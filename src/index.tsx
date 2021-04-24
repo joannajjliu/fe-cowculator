@@ -15,6 +15,36 @@ import './styles/global.scss';
 
 const baseLink = '/fe-stock-keeper-ai';
 
+const DefaultContainer = () => (
+  <div>
+    <DefaultHeader />
+    <section className="py-5 mt-5 text-center container">
+      <div className="row py-lg-5">
+        <div className="col-lg-10 col-md-8 mx-auto">
+          <Route exact path={'/dashboard'}>
+            <Dashboard />
+          </Route>
+          <Route exact path={'/hospital'}>
+            <Hospital />
+          </Route>
+          <Route exact path={'/hospital-room'}>
+            <HospitalRoom />
+          </Route>
+          <Route exact path={'/settings'}>
+            <Settings />
+          </Route>
+          {/* TODO: add support for unmatching URL (404 page) 
+        404 page keeps showing up currently not working */}
+          {/* <Route path="*" exact={true}>
+          <PageNotFound />
+        </Route> */}
+        </div>
+      </div>
+    </section>
+    <StickyFooter />
+  </div>
+);
+
 const App = () => (
   <Router>
     <div className="d-flex flex-column h-100 stock-keeper-global__body">
@@ -29,33 +59,7 @@ const App = () => (
               </div>
             </section>
           </Route>
-          <div>
-            <DefaultHeader />
-            <section className="py-5 mt-5 text-center container">
-              <div className="row py-lg-5">
-                <div className="col-lg-10 col-md-8 mx-auto">
-                  <Route exact path={'/dashboard'}>
-                    <Dashboard />
-                  </Route>
-                  <Route exact path={'/hospital'}>
-                    <Hospital />
-                  </Route>
-                  <Route exact path={'/hospital-room'}>
-                    <HospitalRoom />
-                  </Route>
-                  <Route exact path={'/settings'}>
-                    <Settings />
-                  </Route>
-                  {/* TODO: add support for unmatching URL (404 page) 
-                  404 page keeps showing up currently not working */}
-                  {/* <Route path="*" exact={true}>
-                    <PageNotFound />
-                  </Route> */}
-                </div>
-              </div>
-            </section>
-            <StickyFooter />
-          </div>
+          <Route component={DefaultContainer} />
         </Switch>
       </main>
     </div>
