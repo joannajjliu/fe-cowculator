@@ -1,43 +1,24 @@
 @import './global.scss';
 
-.stock-keeper-dashboard {
-  &__inventory-jumbotron {
-    padding: 3rem;
-    background-image: url('../images/Blue_bckground.jpg');
-    background-size: cover;
-    height: 20rem;
-    text-align: center;
+.cowculator-dashboard {
+  &__jumbotron {
+    background-color: $cowculator-primary-green;
+    left: 0;
+    position: absolute;
+    top: 54px;
+    width: 100%;
   }
 
-  &__inventory-container {
-    margin-top: 5rem;
-    text-align: center;
+  &__profile-text {
+    display: inline-block;
   }
 
-  &__inventory-container--header {
-    color: white;
-    font-weight: 600;
-    vertical-align: middle;
-    margin: auto;
-  }
-
-  &__settings-jumbotron {
-    padding: 3rem;
-    background-image: url('../images/Dark-Gray-Background-for-Free-Download.jpg');
-    background-size: cover;
-    height: 14rem;
-    text-align: center;
-  }
-
-  &__settings-container {
-    margin-top: 2rem;
-    text-align: center;
-  }
-
-  &__settings-container--header {
-    color: $stockkeeper-light-grey;
-    font-weight: 500;
-    vertical-align: middle;
-    margin: auto;
+  &__profile {
+    background-color: $cowculator-dark-grey;
+    border-radius: 50%;
+    border: 3px solid white;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
   }
 }
