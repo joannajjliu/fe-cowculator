@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { format as formatDate } from 'date-fns';
 
 import { mealsEatenData } from '../data/mealsEatenData';
@@ -22,7 +22,9 @@ const Dashboard: React.FC = () => {
           <h1 className="col-4 cowculator-dashboard__profile-text cowculator-dashboard__profile-text--center">
             Profile
           </h1>
-          <h3 className="col-4 cowculator-dashboard__profile-text cowculator-dashboard__profile-text--cta">Logout</h3>
+          <Link to="/">
+            <h3 className="col-4 cowculator-dashboard__profile-text cowculator-dashboard__profile-text--cta">Logout</h3>
+          </Link>
           <div className="cowculator-dashboard__profile" />
         </div>
       </div>
