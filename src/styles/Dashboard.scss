@@ -1,5 +1,28 @@
 @import './global.scss';
 
+.cowculator-dashboard {
+  &__jumbotron {
+    background-color: $cowculator-primary-green;
+    left: 0;
+    position: absolute;
+    top: 54px;
+    width: 100%;
+  }
+
+  &__profile-text {
+    display: inline-block;
+  }
+
+  &__profile {
+    background-color: $cowculator-dark-grey;
+    border-radius: 50%;
+    border: 3px solid white;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+  }
+}
+
 .stock-keeper-dashboard {
   &__inventory-jumbotron {
     padding: 3rem;

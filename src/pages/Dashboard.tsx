@@ -4,19 +4,12 @@ import '../styles/Dashboard.scss';
 
 const Dashboard: React.FC = () => (
   <>
-    <div className="ajumbotron jumbotron-fluid stock-keeper-dashboard__inventory-jumbotron">
-      <div className="container stock-keeper-dashboard__inventory-container">
-        <h1 className="display-4 stock-keeper-dashboard__inventory-container--header">
-          <Link to="/hospital">Inventory</Link>
-        </h1>
-      </div>
-    </div>
-    <div className="mt-3"></div>
-    <div className="jumbotron jumbotron-fluid stock-keeper-dashboard__settings-jumbotron">
-      <div className="container stock-keeper-dashboard__settings-container">
-        <h1 className="display-4 stock-keeper-dashboard__settings-container--header">
-          <Link to="/settings">Settings</Link>
-        </h1>
+    <div className="p-4 mb-4 text-white rounded cowculator-dashboard__jumbotron">
+      <div className="px-0">
+        <h3 className="col-4 cowculator-dashboard__profile-text cowculator-dashboard__profile-text--cta">Settings</h3>
+        <h1 className="col-4 cowculator-dashboard__profile-text cowculator-dashboard__profile-text--center">Profile</h1>
+        <h3 className="col-4 cowculator-dashboard__profile-text cowculator-dashboard__profile-text--cta">Logout</h3>
+        <div className="cowculator-dashboard__profile" />
       </div>
     </div>
   </>
