@@ -1,4 +1,76 @@
 @import './global.scss';
 
-.Cowculator-meal-breakdown {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+  position: absolute;
+  top: 0;
+}
+
+.carousel-control-next-icon:after {
+  content: '›';
+  font-size: 40px;
+  color: $cowculator-primary-green;
+}
+
+.carousel-control-prev-icon:after {
+  content: '‹';
+  font-size: 40px;
+  color: $cowculator-primary-green;
+}
+
+.carousel .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: $cowculator-dark-grey;
+}
+
+.cowculator-meal-breakdown {
+  &__container {
+    // position: absolute;
+  }
+
+  &__top-container {
+    text-align: left;
+  }
+
+  &__back-btn {
+    color: $cowculator-primary-green;
+  }
+
+  &__carousel-container {
+    height: 400px;
+    width: 800px;
+    text-align: center;
+  }
+
+  &__carousel-text-container {
+    margin-bottom: 50px;
+  }
+
+  &__carousel-text-title {
+    color: black;
+    text-align: center;
+  }
+
+  &__carousel-text-date {
+    color: $cowculator-primary-green;
+    text-align: center;
+  }
+
+  &__carousel-food-image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  &__table-container {
+    text-align: left;
+  }
+
+  &__table-text-item {
+    font-weight: 600;
+  }
 }
