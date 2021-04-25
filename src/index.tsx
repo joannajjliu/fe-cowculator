@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Dashboard from './pages/Dashboard';
-import MealBreakdown from './pages/MealBreakdown';
 import DefaultHeader from './templates/DefaultHeader';
-import HospitalRoom from './pages/HospitalRoom';
-import Hospital from './pages/Hospital';
-import Login from './pages/Login';
-//import PageNotFound from './pages/PageNotFound';
-import Settings from './pages/Settings';
 import StickyFooter from './templates/StickyFooter';
+import Dashboard from './pages/Dashboard';
+import Hospital from './pages/Hospital';
+import HospitalRoom from './pages/HospitalRoom';
+import Login from './pages/Login';
+import MealBreakdown from './pages/MealBreakdown';
+import Settings from './pages/Settings';
+//import PageNotFound from './pages/PageNotFound';
 
 import './styles/global.scss';
 
