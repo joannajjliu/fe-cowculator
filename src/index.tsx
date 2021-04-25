@@ -25,7 +25,7 @@ const DefaultContainer = () => (
           <Route exact path={'/dashboard'}>
             <Dashboard />
           </Route>
-          <Route exact path={'/breakdown'}>
+          <Route path={'/meal-breakdown/:mealId'}>
             <MealBreakdown />
           </Route>
           <Route exact path={'/hospital'}>

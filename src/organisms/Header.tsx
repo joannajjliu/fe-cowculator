@@ -6,7 +6,7 @@ const Header: React.FC = () => {
   return (
     <nav className="navbar navbar-expand-md navbar-dark static-top cowculator-header__container">
       <div className="container-fluid">
-        <Link className="navbar-brand" aria-current="page" to="/">
+        <Link className="navbar-brand" aria-current="page" to="/dashboard">
           CowCulator
         </Link>
         <button
