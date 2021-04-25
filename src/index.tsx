@@ -19,7 +19,7 @@ import './styles/global.scss';
 const DefaultContainer = () => (
   <div>
     <DefaultHeader />
-    <section className="py-5 mt-5 text-center container">
+    <section className="pb-5 mt-3 text-center container">
       <div className="row py-lg-5">
         <div className="col-lg-10 col-md-8 mx-auto">
           <Route exact path={'/dashboard'}>

@@ -9,6 +9,10 @@
     top: 270px;
   }
 
+  &__card-container:hover {
+    transform: scale(1.1);
+  }
+
   &__image-thumbnail {
     height: 225px;
     width: 100%;

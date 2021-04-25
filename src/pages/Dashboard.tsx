@@ -34,7 +34,11 @@ const Dashboard: React.FC = () => {
           <h1>Meals taken</h1>
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             {mealsEatenData.map((meal: any, index: number) => (
-              <div className="col" key={index} onClick={() => navigateToMealBreakdown(meal.mealId)}>
+              <div
+                className="col cowculator-meals-summary__card-container"
+                key={index}
+                onClick={() => navigateToMealBreakdown(meal.mealId)}
+              >
                 <div className="card shadow-sm">
                   <div
                     className="cowculator-meals-summary__image-thumbnail"
@@ -43,7 +47,7 @@ const Dashboard: React.FC = () => {
                     }}
                   />
                   <div className="card-body cowculator-meals-summary__card-body">
-                    <p className="card-text cowculator-meals-summary__card-title">Meal #{index + 1}</p>
+                    <p className="card-text cowculator-meals-summary__card-title">Meal #{meal.mealId}</p>
                     <small className="text-muted cowculator-meals-summary__card-subtext">
                       {formatDate(new Date(meal.dateUploaded), 'PP')}
                     </small>
