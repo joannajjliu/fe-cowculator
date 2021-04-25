@@ -1,0 +1,30 @@
+@import './global.scss';
+
+.cowculator-meals-summary {
+  &__album-container {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    top: 270px;
+  }
+
+  &__image-thumbnail {
+    height: 225px;
+    width: 100%;
+  }
+
+  &__card-body {
+    text-align: left;
+  }
+
+  &__card-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 16px;
+  }
+
+  &__card-subtext {
+    font-size: 14px;
+  }
+}
