@@ -4,7 +4,7 @@ import '../styles/Header.scss';
 
 const Header: React.FC = () => {
   return (
-    <nav className="navbar navbar-expand-md navbar-dark fixed-top mb-5 cowculator-header__container">
+    <nav className="navbar navbar-expand-md navbar-dark static-top cowculator-header__container">
       <div className="container-fluid">
         <Link className="navbar-brand" aria-current="page" to="/">
           CowCulator
