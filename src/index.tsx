@@ -5,8 +5,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import DefaultHeader from './templates/DefaultHeader';
 import StickyFooter from './templates/StickyFooter';
 import Dashboard from './pages/Dashboard';
-import Hospital from './pages/Hospital';
-import HospitalRoom from './pages/HospitalRoom';
 import Login from './pages/Login';
 import MealBreakdown from './pages/MealBreakdown';
 import Settings from './pages/Settings';
@@ -27,12 +25,6 @@ const DefaultContainer = () => (
           </Route>
           <Route path={'/meal-breakdown/:mealId'}>
             <MealBreakdown />
-          </Route>
-          <Route exact path={'/hospital'}>
-            <Hospital />
-          </Route>
-          <Route exact path={'/hospital-room'}>
-            <HospitalRoom />
           </Route>
           <Route exact path={'/settings'}>
             <Settings />

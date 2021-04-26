@@ -18,7 +18,11 @@ const Dashboard: React.FC = () => {
     <>
       <div className="p-4 mb-4 text-white rounded cowculator-dashboard__jumbotron">
         <div className="px-0">
-          <h3 className="col-4 cowculator-dashboard__profile-text cowculator-dashboard__profile-text--cta">Settings</h3>
+          <Link to="/settings">
+            <h3 className="col-4 cowculator-dashboard__profile-text cowculator-dashboard__profile-text--cta">
+              Settings
+            </h3>
+          </Link>
           <h1 className="col-4 cowculator-dashboard__profile-text cowculator-dashboard__profile-text--center">
             Profile
           </h1>
