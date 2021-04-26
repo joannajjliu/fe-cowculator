@@ -23,17 +23,17 @@ const Header: React.FC = () => {
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <ul className="navbar-nav ms-auto mb-2 mb-md-0">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/hospital">
+              <Link className="nav-link active" aria-current="page" to="/settings">
                 <i className="bi bi-bell-fill" data-toggle="tooltip" title="alerts" id="alerts-icon"></i>
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/hospital-room">
+              <Link className="nav-link active" aria-current="page" to="/settings">
                 <i className="bi bi-share-fill" data-toggle="tooltip" title="share" id="share-icon"></i>
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/hospital">
+              <Link className="nav-link active" aria-current="page" to="/settings">
                 <i className="bi bi-search" data-toggle="tooltip" title="search" id="search-icon"></i>
               </Link>
             </li>
